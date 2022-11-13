@@ -8,31 +8,43 @@
 </head>
 <body bgcolor="green">
     <div class="sidebar">
-        <button style="background-color: #ffffff; scale:1;font-size: 0.6cm; font-style:
-         italic; font-family: fantasy; border-color: #274b74; " 
-         onclick="document.location='index.html'">Rólam
-        </button>
-        <br>
-        <button style="background-color: #ffffff; scale:1;font-size: 0.6cm; font-style:
-         italic; font-family: fantasy; border-color: #274b74;  
-         "onclick="document.location='keplink.html'">Képlink
-        </button>
-        <br>
-        <button style="background-color: #ffffff; scale:1;font-size: 0.6cm; font-style:
-         italic; font-family: fantasy; border-color: #274b74;  
-         "onclick="document.location='lista.html'">lista
-        </button>
-        <br>
-        <button style="background-color: #ffffff; scale:1;font-size: 0.6cm; font-style:
-         italic; font-family: fantasy; border-color:#274b74 ;  
-         "onclick="document.location='orarend.html'">
-         Órarend
-         </button>
-         <br>
-         <button style="background-color: #ffffff; scale:1;font-size: 0.6cm; font-style:
-         italic; font-family: fantasy; border-color: rgb(197, 0, 0);border-width: 5px;  
-         "onclick="document.location='urlap.html'">Űrlap
-         </button>
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: rgb(34, 34, 34);
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: rgb(255, 255, 255);
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+              background-color: rgb(55, 86, 104);
+            }
+            
+            .active {
+              background-color: #3f5158;
+            }
+                </style>
+                <ul>
+                    <li><a  href="index.html">Rólam</a></li>
+                    <li><a href="keplink.html">Képlink</a></li>
+                    <li><a  href="lista.html">lista</a></li>
+                    <li><a href="orarend.html">Órarend</a></li>
+                    <li><a  class="active"href="urlap.html">Starbucks rendelés</a></li>
+                  </ul>   
+       
          </div>
     <div>
         <br>
@@ -70,6 +82,7 @@
             <fieldset>
                 <legend>Kávéink</legend>
                 <br>
+                
 
 
 
@@ -97,7 +110,7 @@
                 <img  src="img/notberry.jpg" alt="Fehér csokis sékeneszpresszau">            
             </fieldset> 
             <fieldset>
-                <legend>rendelés leadása</legend>
+                <legend>Rendelés leadása</legend>
                 <br>
                 Megjegyzés:
                 <br>
