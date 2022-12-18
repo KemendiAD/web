@@ -19,6 +19,7 @@ h2{
 }
 p{
   text-align:justify;
+  color: black;
 }
 
 p:first-letter{
