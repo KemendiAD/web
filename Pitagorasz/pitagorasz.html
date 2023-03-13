@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pitagorasz tétel</title>
+</head>
+<body>
+	<h1>Pitagorasz tétel - Derékszögű háromszög</h1>
+	<form>
+		<label for="a">Oldal a:</label>
+		<input type="number" id="a" name="a">
+		<br>
+		<label for="b">Oldal b:</label>
+		<input type="number" id="b" name="b">
+		<br>
+		<label for="c">Hiányzó oldal c:</label>
+		<input type="number" id="c" name="c" readonly>
+		<br>
+		<input type="button" value="Számítás" onclick="szamitas()">
+	</form>
+
+	<script>
+		function szamitas() {
+			var a = document.getElementById("a").value;
+			var b = document.getElementById("b").value;
+			var c = document.getElementById("c");
+			if (a != "" && b != "") {
+				var cErtek = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+				c.value = cErtek;
+			} else {
+				alert("Kérjük adja meg az a és b oldalak hosszát!");
+			}
+		}
+	</script>
+</body>
+</html>
